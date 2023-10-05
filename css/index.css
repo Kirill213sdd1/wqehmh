@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/FuturaBookC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  padding: 20px 64px;
+  color: #FFF;
+  font-family: Futura;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 3px solid #A387C4;
+  border-radius: 30px;
+}
+
+.button_active {
+  background: #A387C4;
+  margin-right: 24px;
+}
+
+.header .container {
+  padding: 0 139px;
+  padding-top: 135px;
+  background: #4C3D74;
+}
+.header .container .intro__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .intro__header .intro__logo p {
+  color: #FFF;
+  font-family: "Futura";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header .container .intro__header .intro__nav .nav__list {
+  display: flex;
+  list-style: none;
+}
+.header .container .intro__header .intro__nav .nav__list .list__item {
+  margin: 0 13px;
+}
+.header .container .intro__header .intro__nav .nav__list .list__item a {
+  color: #FFF;
+  font-family: Futura;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header .container .intro__header .burger {
+  display: none;
+}
+
+.first .container {
+  padding: 0 135px;
+  padding-bottom: 182px;
+  background: #4C3D74;
+}
+.first .container .intro__first {
+  display: flex;
+}
+.first .container .intro__first .first__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.first .container .intro__first .first__text .pretitle {
+  color: #FFF;
+  font-family: Futura;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.first .container .intro__first .first__text .title {
+  color: #FFF;
+  font-family: Futura;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+}
+.first .container .intro__first .first__text .subtitle {
+  color: #FFF;
+  font-family: Futura;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  margin-top: 30px;
+}
+.first .container .intro__first .first__text .buttons__list {
+  display: flex;
+  margin-top: 44px;
+}
+
+.second .container {
+  padding: 0 135px;
+  padding-top: 167px;
+}
+.second .container .intro__second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second .container .intro__second .second__title {
+  color: #504178;
+  font-family: Futura;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.second .container .intro__second .intro__list {
+  display: flex;
+  align-items: center;
+  margin-top: 46px;
+}
+.second .container .intro__second .intro__list .list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: 3px solid #4C3D74;
+  background: #F2EEF7;
+  margin: 0 38px;
+}
+.second .container .intro__second .intro__list .list__item .item__text {
+  color: #4C3D74;
+  font-family: Futura;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  padding: 35px 30px;
+  padding-left: 7px;
+}
+.second .container .intro__second .intro__list .list__item .item__text span {
+  color: #4C3D74;
+  font-family: Futura;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.second .container .intro__second .intro__list .list__item .item__image {
+  margin-left: -50px;
+}
+.second .container .intro__second .intro__help {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 63px;
+}
+.second .container .intro__second .intro__help .help__title {
+  color: #4C3D74;
+  font-family: Futura;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+}
+
+@media (max-width: 768px) {
+  .header .container .intro__header .intro__nav {
+    display: none;
+  }
+  .header .container .intro__header .burger {
+    display: block;
+  }
+  .first .container {
+    padding-top: 103px;
+  }
+  .first .container .intro__first {
+    flex-direction: column;
+  }
+  .first .container .intro__first .first__text {
+    align-items: center;
+  }
+  .first .container .intro__first .first__text .pretitle {
+    text-align: center;
+  }
+  .first .container .intro__first .first__text .title {
+    text-align: center;
+  }
+  .first .container .intro__first .first__text .subtitle {
+    text-align: center;
+  }
+  .first .container .intro__first .first__text .buttons__list {
+    flex-direction: column;
+  }
+  .first .container .intro__first .first__text .buttons__list .button {
+    margin: 0;
+  }
+  .third .container .intro__third .third__title {
+    text-align: center;
+  }
+  .third .container .intro__third .intro__list {
+    flex-direction: column;
+  }
+  .third .container .intro__third .intro__help {
+    align-items: center;
+    flex-direction: column;
+  }
+  .third .container .intro__third .intro__help .button_active {
+    margin: 0;
+    padding-left: 99px;
+    padding-right: 99px;
+  }
+  .third .container .intro__third .intro__help .help__title {
+    text-align: center;
+  }
+  .third .container .intro__third .intro__list .list__item {
+    flex-direction: column;
+  }
+  .third .container .intro__third .intro__list .list__item .item__text {
+    padding-top: 0;
+  }
+  .third .container .intro__third .intro__list .list__item {
+    align-items: flex-start;
+  }
+}

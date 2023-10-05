@@ -1,0 +1,279 @@
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaBookC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    padding: 20px 64px;
+    color: #FFF;
+    font-family: Futura;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 3px solid #A387C4;
+    border-radius: 30px;
+    
+    
+}
+.button_active {
+    background: #A387C4;
+    margin-right: 24px;
+}
+
+.header {
+    .container {
+        padding: 0 139px;
+        padding-top: 135px;
+        background: #4C3D74;
+        .intro__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .intro__logo p {
+                color: #FFF;
+                font-family: "Futura";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .intro__nav {
+                .nav__list {
+                    display: flex;
+                    list-style: none;
+                    .list__item  {
+                        margin: 0 13px;
+                        a {
+                            color: #FFF;
+                            font-family: Futura;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                        
+                    }
+                }
+            }
+            .burger {
+                display: none;
+            }
+        }
+        
+    }
+}
+.first {
+    .container {
+        padding: 0 135px;
+        padding-bottom: 182px;
+        background: #4C3D74;
+        .intro__first {
+            display: flex;
+            .first__text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .pretitle {
+                    color: #FFF;
+                    font-family: Futura;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                .title {
+                    color: #FFF;
+                    font-family: Futura;
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-top: 20px
+                }
+                .subtitle {
+                    color: #FFF;
+                    font-family: Futura;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; /* 30px */
+                    margin-top: 30px;
+                }
+                .buttons__list {
+                    display: flex;
+                    margin-top: 44px;
+
+                }
+
+            }
+            
+
+        }
+    }
+}
+
+
+.second {
+    .container {
+        padding: 0 135px;
+        padding-top: 167px;
+        .intro__second {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .second__title {
+                color: #504178;
+                font-family: Futura;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .intro__list {
+                display: flex;
+                align-items: center;
+                margin-top: 46px;
+                .list__item {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 30px;
+                    border: 3px solid #4C3D74;
+                    background: #F2EEF7;
+                    margin: 0 calc(13px + 25px);
+                    .item__text {
+                        color: #4C3D74;
+                        font-family: Futura;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%; /* 24px */
+                        padding: 35px 30px;
+                        padding-left: 7px;
+                        span {
+                            color: #4C3D74;
+                            font-family: Futura;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%;
+                        }
+                    }
+                    .item__image {
+                        //position: absolute;
+                        //left: -50px;
+                        margin-left: -50px;
+                    }
+                }
+            }
+            .intro__help {
+                display: flex;
+                align-items: flex-start;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 63px;
+                .help__title {
+                    color: #4C3D74;
+                    font-family: Futura;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; /* 30px */
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    
+    
+    .header {
+        .container {
+            .intro__header {
+                .intro__nav {
+                    display: none;
+                }
+                .burger {
+                    display: block;
+                }
+            }
+        }
+    }
+    .first {
+        .container {
+            //padding: 0;
+            padding-top: 103px;
+            .intro__first {
+                flex-direction: column;
+                .first__text {
+                    align-items: center;
+                    .pretitle {
+                        text-align: center;
+                    }
+                    .title {
+                        text-align: center;
+                    }
+                    .subtitle {
+                        text-align: center;
+                    }
+                    .buttons__list {
+                        flex-direction: column;
+                        .button {
+                            margin: 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .third {
+        .container {
+            .intro__third {
+                .third__title {
+                    text-align: center;
+                }
+                .intro__list {
+                    flex-direction: column;
+                }
+                .intro__help {
+                    align-items: center;
+                    flex-direction: column;
+                    .button_active {
+                        margin: 0;
+                        padding-left: 99px;
+                        padding-right: 99px;
+                    }
+                    .help__title {
+                        text-align: center;
+                    }
+                }
+                .intro__list {
+                    .list__item {
+                        flex-direction: column;
+                        
+                        .item__text {
+                            padding-top: 0;
+                        }
+                    }
+                    .list__item {
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}
